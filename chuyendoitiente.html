@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Amount
+<input id ="money" type="float" value=""/>
+From currency
+<select id ="FromC">
+    <option value = "USD">USD</option>
+</select>
+To currency
+<select id="ToC">
+    <option value = "VND">VND</option>
+</select>
+<button onclick="Convert()">Convert</button>
+<p id ="result"></p>
+
+<script>
+    function Convert(){
+        var x = "Result: " + document.getElementById("money").value * 23000 + " VND";
+        document.getElementById("result").innerHTML = x;
+    }
+</script>
+</body>
+</html>
